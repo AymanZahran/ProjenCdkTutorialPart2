@@ -8,7 +8,7 @@ export class EcsStack extends Stack {
 
     new MyEcsConstruct(this, 'MyCluster', {
       numberOfAzs: 3,
-      dockerfileAsset: "./dockerfiles/MyImage"
+      dockerfileAsset: "./dockerfiles/MyImage.Dockerfile"
     });
   }
 }
