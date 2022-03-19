@@ -78,7 +78,7 @@ EcsStack.open(`constructor(scope: Construct, id: string, props: StackProps = {})
 EcsStack.line(`super(scope, id, props);`);
 EcsStack.open(`new MyEcsConstruct(this, 'MyCluster', {`);
 EcsStack.line(`desiredCount: 3,`);
-EcsStack.line(`numberOfAzs: 3,`);
+EcsStack.line(`maxAzs: 3,`);
 EcsStack.line(`cpu: 512,`);
 EcsStack.line(`memoryLimitMiB: 1024,`);
 EcsStack.line(`dockerDirAsset: "./dockerfiles"`);
