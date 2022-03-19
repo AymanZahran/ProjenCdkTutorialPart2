@@ -19,7 +19,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 });
 
 project.gitpod.addDockerImage({
-  image: 'jsii/superchain:1-buster-slim-node14'
+  image: 'jsii/superchain:1-buster-slim-node14',
 });
 
 project.gitpod.addCustomTask({
@@ -92,7 +92,7 @@ EcsStack.line('maxAzs: 3,');
 EcsStack.line('desiredCount: 3,');
 EcsStack.line('cpu: 512,');
 EcsStack.line('memoryLimitMiB: 1024,');
-EcsStack.line('dockerDirAsset: \'./dockerfiles\',');
+EcsStack.line('dockerDirAsset: \'../../../src/dockerfiles\',');
 EcsStack.line('dockerFileAsset: \'MyImage.Dockerfile\',');
 EcsStack.close('});');
 EcsStack.close('}');
@@ -104,7 +104,7 @@ DockerAsset.line('FROM nginx:latest');
 
 // Dummy Test
 const DummyTest = 'DummyTest';
-const Test = ts('test/hello.test.ts');
+const Test = ts('test/main.test.ts');
 
 Test.open(`test('${ DummyTest }', () => {`);
 Test.line('expect(true).toBe(true);');

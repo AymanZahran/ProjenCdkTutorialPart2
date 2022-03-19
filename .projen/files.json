@@ -18,7 +18,7 @@
     "src/dockerfiles/MyImage.Dockerfile",
     "src/ecs_stack.ts",
     "src/main.ts",
-    "test/hello.test.ts",
+    "test/main.test.ts",
     "tsconfig.dev.json",
     "tsconfig.json"
   ],
