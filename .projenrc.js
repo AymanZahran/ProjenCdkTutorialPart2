@@ -78,13 +78,13 @@ EcsStack.open(`constructor(scope: Construct, id: string, props: StackProps = {})
 EcsStack.line(`super(scope, id, props);`);
 EcsStack.open(`new MyEcsConstruct(this, 'MyCluster', {`);
 EcsStack.line(`numberOfAzs: 3,`);
-EcsStack.line(`dockerfileAsset: "./dockerfiles/MyImage.Dockerfile"`);
+EcsStack.line(`dockerfileAsset: "./dockerfiles/MyImage"`);
 EcsStack.close(`});`);
 EcsStack.close(`}`);
 EcsStack.close(`}`);
 
 // Dockerfile Asset
-const DockerAsset = docker('src/dockerfiles/MyImage.Dockerfile');
+const DockerAsset = docker('src/dockerfiles/MyImage/Dockerfile');
 DockerAsset.line(`FROM nginx:latest`)
 
 // Dummy Test

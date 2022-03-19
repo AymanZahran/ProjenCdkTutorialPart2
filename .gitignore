@@ -52,6 +52,6 @@ junit.xml
 .parcel-cache/
 !/src/main.ts
 !/src/ecs_stack.ts
-!/src/dockerfiles/MyImage.Dockerfile
+!/src/dockerfiles/MyImage/Dockerfile
 !/test/hello.test.ts
 !/.github/workflows/upgrade.yml
