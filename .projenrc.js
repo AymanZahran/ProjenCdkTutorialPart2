@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'This package is for Projen Demo',
 
   deps: [
-    'ecs-package',
+    'ecs-package@^0.0.6',
   ],
 
   // Add License
