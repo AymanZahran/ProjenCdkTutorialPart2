@@ -10,8 +10,8 @@ export class EcsStack extends Stack {
       maxAzs: 3,
       cpu: 512,
       memoryLimitMiB: 1024,
-      dockerDirAsset: "./dockerfiles"
-      dockerFileAsset: "MyImage.Dockerfile"
+      dockerDirAsset: './dockerfiles'
+      dockerFileAsset: 'MyImage.Dockerfile'
     });
   }
 }
