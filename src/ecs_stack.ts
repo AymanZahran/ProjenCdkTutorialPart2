@@ -6,8 +6,12 @@ export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
     super(scope, id, props);
     new MyEcsConstruct(this, 'MyCluster', {
+      desiredCount: 3,
       numberOfAzs: 3,
-      dockerfileAsset: "./dockerfiles/MyImage/Dockerfile"
+      cpu: 512,
+      memoryLimitMiB: 1024,
+      dockerDirAsset: "./dockerfiles"
+      dockerFileAsset: "MyImage.Dockerfile"
     });
   }
 }
