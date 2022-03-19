@@ -7,7 +7,6 @@
     ".github/workflows/pull-request-lint.yml",
     ".github/workflows/upgrade.yml",
     ".gitignore",
-    ".gitpod.yml",
     ".mergify.yml",
     ".npmignore",
     ".projen/deps.json",
@@ -15,10 +14,6 @@
     ".projen/tasks.json",
     "cdk.json",
     "LICENSE",
-    "src/dockerfiles/MyImage/Dockerfile",
-    "src/ecs_stack.ts",
-    "src/main.ts",
-    "test/hello.test.ts",
     "tsconfig.dev.json",
     "tsconfig.json"
   ],

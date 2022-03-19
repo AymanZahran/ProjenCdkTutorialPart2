@@ -4,7 +4,6 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
-!/.gitpod.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -50,8 +49,4 @@ junit.xml
 /cdk.out/
 .cdk.staging/
 .parcel-cache/
-!/src/main.ts
-!/src/ecs_stack.ts
-!/src/dockerfiles/MyImage/Dockerfile
-!/test/hello.test.ts
 !/.github/workflows/upgrade.yml
