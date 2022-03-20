@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'This package is for Projen Demo',
 
   deps: [
-    'fastfargate@^0.0.0',
+    'fastfargate',
   ],
 
   // Add License
@@ -47,12 +47,6 @@ project.gitpod.addCustomTask({
   command: 'echo "[default]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials',
 });
 
-project.gitpod.addCustomTask({
-  name: 'CdkBootstrap',
-  init: 'npx cdk',
-  command: 'if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi',
-});
-
 project.gitpod.addVscodeExtensions(
   'dbaeumer.vscode-eslint',
   'ms-azuretools.vscode-docker',
@@ -83,7 +77,7 @@ EcsApp.line('app.synth();');
 const EcsStack = ts('src/ecs_stack.ts');
 EcsStack.line('import { Stack, StackProps } from \'aws-cdk-lib\';');
 EcsStack.line('import { Construct } from \'constructs\';');
-EcsStack.line('import { MyEcsConstruct } from \'ecs-package\';');
+EcsStack.line('import { MyEcsConstruct } from \'fastfargate\';');
 
 EcsStack.open('export class EcsStack extends Stack {');
 EcsStack.open('constructor(scope: Construct, id: string, props: StackProps = {}) {');
