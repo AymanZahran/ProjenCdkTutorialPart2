@@ -48,7 +48,8 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.1.0",
-    "constructs": "^10.0.5"
+    "constructs": "^10.0.5",
+    "fastfargate": "^0.0.7"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",

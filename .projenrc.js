@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'This package is for Projen Demo',
 
   deps: [
-    'fastfargate',
+    'fastfargate@^0.0.7',
   ],
 
   // Add License
