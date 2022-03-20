@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'This package is for Projen Demo',
 
   deps: [
-    'ecs-package@^0.0.6',
+    'fastfargate@^0.0.0',
   ],
 
   // Add License
@@ -49,6 +49,7 @@ project.gitpod.addCustomTask({
 
 project.gitpod.addCustomTask({
   name: 'CdkBootstrap',
+  init: 'npx cdk',
   command: 'if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi',
 });
 
