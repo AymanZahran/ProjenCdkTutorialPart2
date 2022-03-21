@@ -167,15 +167,15 @@ README.line('git commit -m "Commit"');
 README.line('git push');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.png)');
+README.line('![projen-cdk-tutorial-part-2-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.png)');
 README.line();
 
-README.line('To Deploy the ECS Stack');
+README.line('6- Deploy the ECS Stack');
 README.line('```sh');
 README.line('cdk deploy');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-Stack.png)');
+README.line('![projen-cdk-tutorial-part-2-stack](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-stack.png)');
 README.line();
 
 

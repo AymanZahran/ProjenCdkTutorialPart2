@@ -48,13 +48,13 @@ git add .
 git commit -m "Commit"
 git push
 ```
-![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.png)
+![projen-cdk-tutorial-part-2-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.png)
 
-To Deploy the ECS Stack
+6- Deploy the ECS Stack
 ```sh
 cdk deploy
 ```
-![projen-cdk-tutorial-part-1-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-Stack.png)
+![projen-cdk-tutorial-part-2-stack](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-stack.png)
 
 
 ## License
