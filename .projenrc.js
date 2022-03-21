@@ -167,15 +167,16 @@ README.line('git commit -m "Commit"');
 README.line('git push');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-2-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.png)');
+README.line('![projen-cdk-tutorial-part-2-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-build.PNG)');
 README.line();
 
 README.line('6- Deploy the ECS Stack');
 README.line('```sh');
+README.line('npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION');
 README.line('cdk deploy');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-2-stack](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-stack.png)');
+README.line('![projen-cdk-tutorial-part-2-stack](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-2-stack.PNG)');
 README.line();
 
 
